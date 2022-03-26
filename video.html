@@ -1,69 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="./fonts/roboto-v29-latin_cyrillic-500.woff2" as="font" type="fonts/woff2" crossorigin/>
-    <link rel="preload" href="./fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="fonts/woff2" crossorigin/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="./fonts/roboto-v29-latin_cyrillic-500.woff2"
+      as="font"
+      type="fonts/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/roboto-v29-latin_cyrillic-regular.woff2"
+      as="font"
+      type="fonts/woff2"
+      crossorigin
+    />
 
-    <link rel="stylesheet" href="./style/normalize.css"/>
-    <link rel="stylesheet" href="./style/style.css"/>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <script defer src="./script/swiper-bundle.min.js"></script>
+    <script defer src="./script/swiper.js"></script>
+
     <title>Batman Promo</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <button class="header__burger burger"></button>
-        <nav class="header__navigation navigation">
-            <button class="nav__close"></button>
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active">Назад</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="index.html">Главная</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="photo.html">Фото</a>
-                </li>
-            </ul>
-            <p class="header__hashtag">#TheBatman</p>
-            <ul class="social__list">
-                <li class="social__item">
-                    <a href="#" class="social__link social__link_fb" aria-label="link on facebook"></a>
-                </li>
-                <li class="social__item">
-                    <a href="#" class="social__link social__link_tw" aria-label="link on Twitter"></a>
-                </li>
-                <li class="social__item">
-                    <a href="#" class="social__link social__link_inst" aria-label="link on Instagran"></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="mute">
-            <input type="checkbox" id="mute" class="mute__checkbox">
-            <label class="mute__label" for="mute">mute</label>
-        </div>
+      <button class="header__burger burger"></button>
+      <nav class="header__navigation navigation">
+        <button class="nav__close"></button>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link_active">Назад</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="photo.html">Фото</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">Главная</a>
+          </li>
+        </ul>
+        <p class="header__hashtag">#TheBatman</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link social__link_fb"
+              aria-label="link on facebook"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link social__link_tw"
+              aria-label="link on Twitter"
+            ></a>
+          </li>
+          <li class="social__item">
+            <a
+              href="#"
+              class="social__link social__link_inst"
+              aria-label="link on Instagran"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mute">
+        <input type="checkbox" id="mute" class="mute__checkbox" />
+        <label class="mute__label" for="mute">mute</label>
+      </div>
     </header>
-    <main class="main main__index">
-        <img src="./img/Logo.png" alt="Batman logo" class="main__logo" width="329" height="235">
+    <main class="main main_slider">
+      <div class="slider-main swiper">
+        <ul class="slider-main__list swiper-wrapper">
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/trailer01.jpg">
+              <source src="./video/trailer01.mp4" type="video/mp4" />
+              <source src="./video/trailer01.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/trailer02.jpg">
+              <source src="./video/trailer02.mp4" type="video/mp4" />
+              <source src="./video/trailer02.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/trailer03.jpg">
+              <source src="./video/trailer03.mp4" type="video/mp4" />
+              <source src="./video/trailer03.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/tizer01.jpg">
+              <source src="./video/tizer01.mp4" type="video/mp4" />
+              <source src="./video/tizer01.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/tizer02.jpg">
+              <source src="./video/tizer02.mp4" type="video/mp4" />
+              <source src="./video/tizer02.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/tizer03.jpg">
+              <source src="./video/tizer03.mp4" type="video/mp4" />
+              <source src="./video/tizer03.webm" type="video/webm" />
+            </video>
+          </li>
+          <li class="slider-main__item swiper-slide">
+            <video class="slider-video" controls poster="./video/tizer04.jpg">
+              <source src="./video/tizer04.mp4" type="video/mp4" />
+              <source src="./video/tizer04.webm" type="video/webm" />
+            </video>
+          </li>
+        </ul>
+      </div>
+      <div class="pagination">
+        <button class="pagination__arrow"></button>
+        <div class="slider-thumbs swiper">
+          <ul class="slider-thumbs__list swiper-wrapper">
+            <li class="slider-thumbs__item swiper-slide">
+              <img
+                src="/video/trailer01.jpg"
+                alt="preview photo"
+                class="slider-thumbs__img"
+                width="260"
+                height="100"
+              />
+            </li>
+            <li class="slider-thums__item swiper-slide">
+              <img
+                src="/video/trailer02.jpg"
+                alt="preview photo"
+                class="slider-thumbs__img"
+                width="260"
+                height="100"
+              />
+            </li>
+            <li class="slider-thumbs__item swiper-slide">
+              <img
+                src="/video/trailer03.jpg"
+                alt="preview photo"
+                class="slider-thumbs__img"
+                width="260"
+                height="100"
+              />
+            </li>
+            <li class="slider-thumbs__item swiper-slide">
+                <img
+                  src="/video/tizer01.jpg"
+                  alt="preview photo"
+                  class="slider-thumbs__img"
+                  width="260"
+                  height="100"
+                />
+              </li>
+            <li class="slider-thumbs__item swiper-slide">
+                <img
+                  src="/video/tizer02.jpg"
+                  alt="preview photo"
+                  class="slider-thumbs__img"
+                  width="260"
+                  height="100"
+                />
+              </li>
+              <li class="slider-thumbs__item swiper-slide">
+                <img
+                  src="/video/tizer03.jpg"
+                  alt="preview photo"
+                  class="slider-thumbs__img"
+                  width="260"
+                  height="100"
+                />
+              </li>
+              <li class="slider-thumbs__item swiper-slide">
+                <img
+                  src="/video/tizer04.jpg"
+                  alt="preview photo"
+                  class="slider-thumbs__img"
+                  width="260"
+                  height="100"
+                />
+              </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <ul class="footer__list">
-            <li class="footer__item">
-                <a href="#" class="footer__link">Политика конфиденциальности</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">Условия эксплуатации</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">Выбор объявлений</a>
-            </li>
-            <li class="footer__item">
-                <a href="#" class="footer__link">Настройки файлов cookie</a>
-            </li>
-        </ul>
-        <p class="footer_copyright">© 2022 WBEI TM & © DC</p>
-    </footer> 
-</body>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="#" class="footer__link">Политика конфиденциальности</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Условия эксплуатации</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Выбор объявлений</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Настройки файлов cookie</a>
+        </li>
+      </ul>
+      <p class="footer_copyright">© 2022 WBEI TM & © DC</p>
+    </footer>
+  </body>
 </html>

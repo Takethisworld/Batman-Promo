@@ -8,7 +8,12 @@
     <link rel="preload" href="./fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="fonts/woff2" crossorigin/>
 
     <link rel="stylesheet" href="./style/normalize.css"/>
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
     <link rel="stylesheet" href="./style/style.css"/>
+
+    <script defer src="./script/swiper-bundle.min.js"></script>
+    <script  defer src="./script/swiper.js"></script>
+
     <title>Batman Promo</title>
 </head>
 <body>
@@ -45,10 +50,56 @@
             <label class="mute__label" for="mute">mute</label>
         </div>
     </header>
-    <main class="main main__index">
-        <img src="./img/Logo.png" alt="Batman logo" class="main__logo" width="329" height="235">
-    </main>
-    <footer class="footer">
+        <main class="main main_slider">
+            <div class="slider-main swiper">
+                <ul class="slider-main__list swiper-wrapper">
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo01.jpg" alt="main foto promo" class="slider-main__img" >
+                    </li>
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo02.jpg" alt="main foto promo" class="slider-main__img">
+                    </li>
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo03.jpg" alt="main foto promo" class="slider-main__img">
+                    </li>
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo04.jpg" alt="main foto promo" class="slider-main__img">
+                    </li>
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo05.jpeg" alt="main foto promo" class="slider-main__img" >
+                    </li>
+                    <li class="slider-main__item swiper-slide">
+                        <img src="/photo/photo06.jpeg" alt="main foto promo" class="slider-main__img">
+                    </li>
+                </ul>
+            </div>
+            <div class="pagination">
+                <button class="pagination__arrow"></button>
+             <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="/photo/photo01-thumbs.jpg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thums__item swiper-slide">
+                        <img src="/photo/photo02-thumbs.jpg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="/photo/photo03-thumbs.jpg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="/photo/photo04-thumbs.jpg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="/photo/photo05-thumbs.jpeg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="/photo/photo06-thumbs.jpg" alt="preview photo" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
         <ul class="footer__list">
             <li class="footer__item">
                 <a href="#" class="footer__link">Политика конфиденциальности</a>
